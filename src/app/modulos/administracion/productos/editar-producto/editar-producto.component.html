@@ -1,0 +1,58 @@
+<div class="section"></div>
+  <main>
+    
+      <img class="responsive-img" style="width: 250px;" src="https://c.tenor.com/1KSFYtKFrkwAAAAi/pedidonova-nova.gif" />
+      <div class="section"></div>
+
+      <h5 class="indigo-text">Edite su producto</h5>
+      <div class="section"></div>
+
+      <div class="container">
+        <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+
+          <form class="col s12"  [formGroup]="fgValidador" (ngSubmit)="EditarProducto()">
+            <div class='row'>
+              <div class='col s12'>
+              </div>
+            </div>
+            <input type="hidden" formControlName="id"/>
+            <div class='row'>
+              <div class='input-field col s12'>
+                <input formControlName ="nombre"  type='text'  />
+                <label class="active">Ingrese el nombre</label>
+              </div>
+            </div>
+
+            <div class='row'>
+                <div class='input-field col s12'>
+                  <input formControlName ="precio" class='validate' type='text'  />
+                  <label class="active">Ingrese precio</label>
+                </div>
+              </div>
+
+              <div class='row'>
+                <div class='input-field col s12'>
+                  <input formControlName ="imagen"  type='text'  />
+                  <label  class="active" >Ingrese imagen</label>
+                </div>
+              </div>
+
+            
+            <br />
+            
+            <br />
+              <div class='row'>
+                <button  [disabled] = "!fgValidador.valid" type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Guardar Producto</button>
+              </div>
+            
+          </form>
+          <br />
+        </div>
+      </div>
+      
+    
+
+    <div class="section"></div>
+    <div class="section"></div>
+  </main>
+
