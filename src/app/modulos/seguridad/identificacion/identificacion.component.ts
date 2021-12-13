@@ -22,7 +22,7 @@ export class IdentificacionComponent implements OnInit {
   constructor(private fb: FormBuilder,
     private servicioSeguridad: SeguridadService,
     private router: Router) {
-      this.siteKey="6LcFFY4dAAAAAMs-rnAbNKrhnZXmyp5WQ6cfVFUK";
+      this.siteKey="6Lcvr3YdAAAAAKfn2aR-jujT_PqfDWHPuTmdouur";
      }
 
   ngOnInit(): void {
