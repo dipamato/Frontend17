@@ -15,7 +15,7 @@ export class SeguridadService {
    }
 
   Identificar(usuario: string , clave:string):Observable<ModeloIdentificar>{
-    return this.http.post("https://grupo17bc.herokuapp.com//identificarPersona",{
+    return this.http.post("http://localhost:3000/identificarPersona",{
       usuario:usuario,
       clave: clave
     },
